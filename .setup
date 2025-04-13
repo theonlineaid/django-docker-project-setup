@@ -1,0 +1,42 @@
+## First Create virtual environment
+```python -m venv myworld```
+
+## Active environment
+```source myenv/bin/activate```
+
+## You Can Deactive virtual environment if you need
+``` deactivate```
+
+
+## install Django
+
+```python -m pip install Django```
+
+## Check django version
+```django-admin --version```
+
+
+## Setup Project 
+
+```django-admin startproject onlineaid .```
+
+## Create childern app for root 
+
+without urls
+```python manage.py startapp app_name```
+
+
+## Setup super admin for django
+
+After run docker 
+
+```
+docker-compose exec web python manage.py migrate
+docker-compose exec web python manage.py createsuperuser
+```
+
+If you dont you Docker run this
+
+```python manage.py runserver```
+
+It will Starting development server at http://127.0.0.1:8000/

@@ -5,6 +5,7 @@ __pycache__/
 
 # Django DB
 *.sqlite3
+postgres_data
 
 # Environments
 # .env

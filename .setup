@@ -35,6 +35,11 @@ docker-compose exec web python manage.py migrate
 docker-compose exec web python manage.py createsuperuser
 ```
 
+## If mode have change we need to makemigrate
+```
+docker-compose exec web python manage.py makemigrations
+```
+
 If you dont you Docker run this
 
 ```python manage.py runserver```
